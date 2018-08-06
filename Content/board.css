@@ -1,0 +1,36 @@
+* { padding: 0px; margin: 0px; }
+body { font-family: Verdana, Arial, Sans-Serif; font-size: 17px; background-color: #000; color: #fff; }
+
+#supl-wrapper { width: 800px; height: 600px; position: relative; }       
+        
+h1 { 
+    color: #fff; 
+    text-transform: uppercase; 
+    font-weight: normal; 
+    font-family: Tahoma, Arial, Sans-Serif; 
+    margin-bottom: 20px; 
+    font-size: 20px; 
+    padding: 10px;
+    border-bottom: solid 1px #fff;
+    text-align: center;
+}
+
+table 
+{ 
+    border-collapse: collapse; 
+    border: solid 2px #000; 
+    margin-bottom: 10px;
+    width: 800px;
+    position: absolute;
+    font-size: 18px;
+}     
+
+th, td { padding: 5px; border: solid 1px #fff; vertical-align: top; }
+
+.color1 { background-color: #FF033E; }
+.color2 { background-color: #00308F; }
+.color3 { background-color: #228B22; }
+
+.tbl-counter {
+    text-align: right;
+}

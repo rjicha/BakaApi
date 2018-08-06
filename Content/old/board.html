@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        čtvrtek 21.06.2018
+    </title>
+    <link rel="Stylesheet" type="text/css" href="css/styly.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+
+            var tblCount = $(".SupplementationPanel").find(".tbl").length;
+            var tblCounter = 2;
+
+            var tweetsCount = $(".TwitterPanel").find(".Tweet").length;
+            var twitterCounter = 2;
+
+            function fade(selector, speed, currentItem) {
+                $("." + selector).fadeOut(speed);
+                $("#" + selector + currentItem).fadeIn(speed);
+            }
+
+            $.fn.tablesSlideshow = function () {
+                fade("tbl", 1000, tblCounter);
+                tblCounter++;
+                if (tblCounter > tblCount) tblCounter = 1;
+            };
+
+            $.fn.twitterSwapper = function () {
+                if (tweetsCount < 2) return;
+
+                fade("Tweet", 1000, twitterCounter);
+                twitterCounter++;
+                if (twitterCounter > tweetsCount) twitterCounter = 1;
+            };
+
+            $.fn.reload = function () {
+                location.reload();
+            };
+
+            if (tblCount > 1)
+                setInterval("$.fn.tablesSlideshow()", 8000);
+
+            if (tweetsCount > 1)
+                setInterval("$.fn.twitterSwapper()", 10000);
+
+            setInterval("$.fn.reload()", 1800000);
+        });
+
+    </script>
+</head>
+
+<body>
+    <form method="post" action="./" id="form1">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODgwOTgxOTk5D2QWAgIED2QWAgIBD2QWAgIBDw8WBB4IQ3NzQ2xhc3MFA3RibB4EXyFTQgICZBYCZg9kFgJmDw8WAh4EVGV4dAUDMS8xZGRkfI/pzj52jm2DA4jqYF8RPjFcoqo="
+            />
+        </div>
+
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="382A75F5" />
+        </div>
+        <div id="wrapper">
+
+            <div id="supl">
+                <div id="SuplPanel1" class="SupplementationPanel">
+                    <em>Posledn&#237; aktualizace: 31.07.2018 15:19:12</em>
+                    <table id="tbl1" class="tbl">
+                        <tr>
+                            <td colspan="7">1/1</td>
+                        </tr>
+                        <tr class="Class" style="background-color: #FF033E">
+                            <th rowspan="1" scope="row">4.A</th>
+                            <td colspan="6">1.- 10. hod Maturity</td>
+                        </tr>
+                        <tr class="Class" style="background-color: #00308F">
+                            <th rowspan="1" scope="row">4.B</th>
+                            <td colspan="6">0.- 10. hod Maturity</td>
+                        </tr>
+                        <tr class="Class" style="background-color: #228B22">
+                            <th rowspan="1" scope="row">8.G</th>
+                            <td colspan="6">1.- 10. hod Maturity</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="TwitterPanel">
+                <h2>Twitter</h2>
+                <ul class="Tweets">
+                </ul>
+                <a href="https://twitter.com/DGaSOSE" target="_blank">@DGaSOSE</a>
+            </div>
+            <div class="EventPanel">
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

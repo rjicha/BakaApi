@@ -1,0 +1,48 @@
+* { padding: 0px; margin: 0px; }
+body { font-family: Verdana, Arial, Sans-Serif; font-size: 17px; background-color: #000; color: #fff; }
+
+
+#wrapper { width: 1200px; height: 600px; position: relative; }       
+        
+h1 { color: #fff; text-transform: uppercase; font-weight: normal; font-family: Tahoma, Arial, Sans-Serif; margin-bottom: 20px; font-size: 40px; }
+
+table 
+{ 
+    border-collapse: collapse; 
+    border: solid 2px #000; 
+    margin-bottom: 10px; 
+    display: none; 
+    width: 800px;
+    position: absolute;
+    font-size: 18px;
+}     
+
+th, td { padding: 5px; border: solid 1px #fff; vertical-align: top; }
+   
+#tbl1 { display: table; }        
+.Class { color: #fff; }
+  
+#supl { width: 800px; height: 570px; position: absolute; margin-top: 5px; }
+#supl em { font-size: 16px; font-style: normal; float: right; }
+#supl strong { padding: 20px; display: block; background-color: #A8BB19; clear: both; margin-top: 20px; border-radius: 6px; }
+        
+/* twitter */
+
+.TwitterPanel { position: absolute; bottom: 0px; background-color: #900; width: 100%; }
+.TwitterPanel h2 { position: absolute; width: 50px; text-indent: -9999px; margin: 0; background: url(Images/twitter_small.png) no-repeat 10px 1px; }
+.TwitterPanel ul { position: relative; margin-left: 50px; height: 55px; list-style-type: none; padding: 0; margin-right: 100px; } 
+.TwitterPanel li { padding: 5px 10px 5px 0px; }
+.TwitterPanel li em { font-style: normal; font-weight: bold; margin-right: 10px; padding: 5px 10px; color: #1dcaff; }
+.TwitterPanel li p { padding: 0; margin: 0; position: absolute; left: 130px; top: 5px; width: 850px; }
+.TwitterPanel a { position: absolute; right: 10px; top: 4px; font-weight: bold; color: #1dcaff; text-decoration: none; }
+
+.TwitterPanel .Tweet { display: none; position: absolute; }
+.TwitterPanel #Tweet1 { display: block; }
+
+/* calendar */
+.EventPanel { position: absolute; top: 40px; right: 0px; width: 350px; color: #fff; }
+.EventPanel h2 { font-weight: normal; text-transform: uppercase; margin-bottom: 15px; }
+.EventPanel ul { list-style-type: none; }
+.EventPanel li { padding: 0; }
+.EventPanel em { display: block; padding: 5px 10px; background-color: #555; font-style: normal; margin-bottom: 5px; color: #fff; }
+.EventPanel li p { padding: .5em 1em; margin: 0; }
