@@ -1,5 +1,8 @@
 $(window).on("load", function() { 
     loadChanges();
+
+    $("footer").html("Poslední aktualizace: " + new Date().toLocaleTimeString("cs-CZ"));
+    setInterval("location.reload()", 1800000);
 });
 
 function slideshow(currentTable, tablesCount) {

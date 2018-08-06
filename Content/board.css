@@ -34,3 +34,8 @@ th, td { padding: 5px; border: solid 1px #fff; vertical-align: top; }
 .tbl-counter {
     text-align: right;
 }
+
+footer {
+    font-size: 11px;
+    text-align: center;
+}
